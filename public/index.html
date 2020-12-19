@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/css/main.css">
+    <title>Contact Manager</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="main-header" class="d-flex justify-content-between align-items-center py-3">
+            <h1 class="display-4 text-light">Contact Manager</h1>
+            <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#contactModal">Add
+                Contact</button>
+                
+        </header>
+        <main class="my-2">
+            <p class="text-light">Add, Store, Edit, and Remove Contacts.</p>
+            <div class="line pb-5" class="row"></div>
+            <div id="searchSection" class="row justify-content-center py-4">
+                <div class="col-6">
+                    <form id="searchForm" class="d-flex">
+                        <input type="search" class="form-control" name="search" placeholder="Search Contacts">
+                        <button type="submit" class="btn btn-outline-light ml-1">
+                            Search</button>
+                        
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="text-center py-4" id="countContainer" class="row"></div>
+            <div id="contactContainer" class="row"></div>
+        </main>
+    </div>
+    <div id="contactModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-postit-purple">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">New Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" tabindex="-1">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <input type="hidden" value="" name="contactID">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" name="contactFname" class="form-control"
+                                placeholder="What is the first name of your contact?" required>
+                        </div>
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" name="contactLname" class="form-control"
+                                placeholder="What is the last name of your contact?" required>
+                        </div>
+                        <div>
+                            <label>Phone Number</label>
+                            <input type="text" name="contactPhonenum" class="form-control"
+                                placeholder="What is the phone number of your contact?">
+                        </div>
+                        <div>
+                            <label>Contact Type</label>
+                            <input type="text" name="contactType" class="form-control"
+                                placeholder="Is the contact family friend or business?" required>
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="text" name="contactEmail" class="form-control"
+                                placeholder="What is the email of your contact?">
+                        </div>
+                        <div>
+                            <label>Birthday</label>
+                            <input type="text" name="contactDOB" class="form-control"
+                                placeholder="What is the contact's DOB?">
+                        </div>
+                        <div>
+                            <label>Notes</label>
+                            <textarea name="contactContent" id="" class="form-control"
+                                placeholder="What would you like to write?"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="submit" class="btn btn-secondary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./build/javascript/main.js"></script>
+</body>
+
+</html>

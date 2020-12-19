@@ -1,0 +1,17 @@
+// Bootstrap Theme Customization
+
+
+//////////////////////////////////////
+// Boostrap variable overrides here
+//////////////////////////////////////
+
+$theme-colors: (
+    "postit-yellow": #FFFF88,
+    "postit-purple": #ccccff,
+    "postit-green": #ccffcc
+);
+
+/////////////////////////////////////
+
+// Include Bootstrap SASS here. This will allow our overrides to take effect.
+@import '~bootstrap/scss/bootstrap';

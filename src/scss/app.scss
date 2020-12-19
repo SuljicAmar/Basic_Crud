@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
+
+// header {
+//   border-bottom: 1.5px solid #ccccff;
+// }
+
+
+.line {
+  border-top: 1.5px solid #ccccff;
+}
+// Notes
+.contact {
+  border-radius: 25px;
+  min-height: 200px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .controls {
+  margin-top: auto;
+  align-self: center;
+}
+
+.contact .contact-header {
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.contact .contact-content {
+  font-size: .9em;
+  line-height: 1.5rem;
+  padding-bottom: 10%;
+  font-family: "Lucida Console", "Courier New";
+
+}
+
+.contact .contact-phone {
+  font-size: .9em;
+  line-height: 1.5rem;
+  padding-bottom: 1%;
+  font-family: "Lucida Console", "Courier New";
+}
+
+.contact .contact-type {
+  font-size: .9em;
+  line-height: 1.5rem;
+  padding-bottom: 1%;
+  font-family: "Lucida Console", "Courier New";
+}
+.contact .contact-email {
+  font-size: .9em;
+  line-height: 1.5rem;
+  padding-bottom: 1%;
+  font-family: "Lucida Console", "Courier New";
+}
+.contact .contact-DOB {
+  font-size: .9em;
+  line-height: 1.5rem;
+  padding-bottom: 1%;
+  font-family: "Lucida Console", "Courier New";
+}
+.contact .contact-contactname{
+  border-bottom: 1.5px solid #007a3d;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+  text-align: center;
+}
+
+.contact .contact-age {
+  font-size: .9em;
+  line-height: 1.5rem;
+  padding-bottom: 1%;
+  font-family: "Lucida Console", "Courier New";
+}
+
+.btn.btn-delete {
+  font-size: 1.6rem;
+  color: #ce1126;
+  margin-left: 10px;
+}
+
+.btn.btn-edit {
+
+  font-size: 1rem;
+  color:#FFFF88;
+  font-family: "Lucida Console", "Courier New";
+}
+
+.btn:hover {
+  color: theme-color('dark');
+}
+
+#contactModal textarea, #contactModal input {
+  background-color: transparent;
+}
+
+#contactModal input[type=text] {
+  border:none;
+}
+
+#contactModal textarea {
+  border: none;
+  min-height: 125px;
+}
+#count {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+body {
+  background-color: #007a3d;
+}
